@@ -1,1 +1,129 @@
-<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Мои учебные работы</title><link rel="stylesheet" href="style.css"></head><body><header><nav><b>MY STUDY PORTFOLIO</b><a href="#works">Мои работы ↓</a></nav><div class="hero"><small>УЧЕБНОЕ ПОРТФОЛИО · 2026</small><h1>Мои учебные<br><em>работы</em></h1><p>Компьютерное оборудование, операционные системы, программное обеспечение и информационная безопасность.</p><a class="btn" href="#works">Посмотреть задания</a></div></header><main id="works"><div class="intro"><div><small>ПОРТФОЛИО СТУДЕНТА</small><h2>Выполненные задания</h2><p>Материалы сгруппированы по датам. Нажмите на карточку, чтобы открыть ответ.</p></div><div class="count"><strong id="count">0</strong> заданий</div></div><div class="filters"><input id="search" placeholder="Найти задание..."><select id="filter"><option value="all">Все даты</option></select></div><div id="content"></div><aside><b>Важно перед сдачей</b><p>В заданиях с диагностикой внесите реальные данные своего ПК. Не указывайте тестирование или удаление файлов, если вы этого не делали. Для задания от 05.11 добавьте собственные скриншоты виртуальной машины.</p></aside></main><footer>MY STUDY PORTFOLIO <span>Учебный проект · 2026</span></footer><script src="script.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Учебное портфолио Бекзата Баймурзинова, веб-дизайнера.">
+  <title>Бекзат Баймурзинов — Портфолио</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="#home">BB<span>.</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Открыть меню">☰</button>
+    <nav id="nav">
+      <a href="#about">Обо мне</a>
+      <a href="#works">Работы</a>
+      <a href="#blender">Blender</a>
+      <a href="#figma">Figma</a>
+      <a href="#skills">Навыки</a>
+    </nav>
+    <button class="theme-toggle" id="themeToggle" aria-label="Переключить тему">☀</button>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">УЧЕБНОЕ ПОРТФОЛИО · 2026</p>
+        <h1>Привет! Я <span>Бекзат</span><br>Баймурзинов</h1>
+        <p class="hero-text">Начинающий веб-дизайнер. Изучаю создание сайтов, интерфейсов и цифровых проектов.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#works">Посмотреть работы</a>
+          <a class="btn secondary" href="#about">Обо мне</a>
+        </div>
+        <div class="hero-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Figma</span></div>
+      </div>
+      <div class="hero-card">
+        <div class="avatar">BB</div>
+        <p class="hero-card-label">МОЁ ПОРТФОЛИО</p>
+        <h2>Создаю. Изучаю. Развиваюсь.</h2>
+        <p>Здесь собраны мои учебные проекты и результаты обучения.</p>
+        <div class="card-line"></div>
+        <div class="card-bottom"><span>WD-2-135</span><span>Казахстан</span></div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="section-heading"><p class="eyebrow">01 / ОБО МНЕ</p><h2>Немного <span>обо мне</span></h2></div>
+      <div class="about-grid">
+        <article class="panel">
+          <h3>Бекзат Баймурзинов</h3>
+          <p>Я обучаюсь веб-дизайну и информационным технологиям. Мне интересно создавать удобные и красивые сайты, работать с графикой и изучать программирование.</p>
+          <p>Это портфолио показывает мои учебные результаты, практические задания и развитие навыков.</p>
+        </article>
+        <article class="panel facts">
+          <div><small>Специальность</small><strong>Веб-дизайнер</strong></div>
+          <div><small>Группа</small><strong>WD-2-135</strong></div>
+          <div><small>Технологии</small><strong>HTML · CSS · JS</strong></div>
+          <div><small>Год</small><strong>2026</strong></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="works">
+      <div class="section-heading"><p class="eyebrow">02 / УЧЕБНЫЕ РАБОТЫ</p><h2>Мои <span>работы</span></h2><p>Учебные материалы распределены по темам. Используй поиск и фильтр, чтобы найти нужную работу.</p></div>
+      <div class="toolbar">
+        <input id="searchInput" type="search" placeholder="Поиск по названию...">
+        <select id="categoryFilter" aria-label="Фильтр работ">
+          <option value="all">Все категории</option>
+          <option value="Безопасность">Безопасность</option>
+          <option value="Операционные системы">Операционные системы</option>
+          <option value="Оборудование">Оборудование</option>
+          <option value="Программирование">Программирование</option>
+        </select>
+      </div>
+      <div class="work-grid" id="workGrid">
+        <article class="work-card" data-category="Безопасность"><div class="work-icon">🛡️</div><p class="work-category">БЕЗОПАСНОСТЬ</p><h3>Техника безопасности</h3><p>Правила безопасной работы за компьютером, организация рабочего места и электробезопасность.</p><button class="text-button details-btn" data-title="Техника безопасности" data-info="При работе за компьютером важно правильно организовать рабочее место, соблюдать расстояние до монитора, делать перерывы и не работать с повреждёнными кабелями.">Подробнее →</button></article>
+        <article class="work-card" data-category="Операционные системы"><div class="work-icon">💻</div><p class="work-category">ОПЕРАЦИОННЫЕ СИСТЕМЫ</p><h3>Операционные системы</h3><p>Назначение операционной системы, сравнение Windows и Linux, файловые системы и драйверы.</p><button class="text-button details-btn" data-title="Операционные системы" data-info="Операционная система управляет ресурсами компьютера, файлами, устройствами и запуском приложений. Примеры: Windows и Linux.">Подробнее →</button></article>
+        <article class="work-card" data-category="Оборудование"><div class="work-icon">🖥️</div><p class="work-category">ОБОРУДОВАНИЕ</p><h3>Комплектующие ПК</h3><p>Основные компоненты компьютера: процессор, материнская плата, оперативная память, накопитель и блок питания.</p><button class="text-button details-btn" data-title="Комплектующие ПК" data-info="Процессор выполняет вычисления, оперативная память временно хранит данные, SSD хранит файлы, материнская плата соединяет компоненты, а блок питания обеспечивает их энергией.">Подробнее →</button></article>
+        <article class="work-card" data-category="Оборудование"><div class="work-icon">🔧</div><p class="work-category">ДИАГНОСТИКА</p><h3>Диагностика компьютера</h3><p>Изучение характеристик ПК с помощью системных инструментов Windows и диспетчера устройств.</p><button class="text-button details-btn" data-title="Диагностика компьютера" data-info="Для диагностики Windows можно использовать msinfo32, dxdiag и devmgmt.msc. Эти инструменты помогают узнать характеристики, проверить устройства и драйверы.">Подробнее →</button></article>
+        <article class="work-card" data-category="Безопасность"><div class="work-icon">🔐</div><p class="work-category">ИНФОРМАЦИОННАЯ БЕЗОПАСНОСТЬ</p><h3>Защита информации</h3><p>Пароли, резервное копирование, обновления программ и защита от вредоносного ПО.</p><button class="text-button details-btn" data-title="Защита информации" data-info="Для защиты информации используют сложные уникальные пароли, двухфакторную аутентификацию, обновления, антивирусную защиту и резервные копии.">Подробнее →</button></article>
+        <article class="work-card" data-category="Программирование"><div class="work-icon">⌨️</div><p class="work-category">ПРОГРАММИРОВАНИЕ</p><h3>JavaScript: карточка студента</h3><p>Работа с переменными, типами данных и выводом информации на веб-страницу.</p><button class="text-button details-btn" data-title="JavaScript: карточка студента" data-info="В проекте используются переменные разных типов: строки, числа и логические значения. JavaScript выводит данные студента на HTML-страницу.">Подробнее →</button></article>
+        <article class="work-card" data-category="Программирование"><div class="work-icon">📊</div><p class="work-category">ПРОГРАММИРОВАНИЕ</p><h3>Электронный журнал</h3><p>Массивы и объекты студентов, поиск, расчёт среднего балла и обработка текстовых данных.</p><button class="text-button details-btn" data-title="Электронный журнал" data-info="Электронный журнал хранит список студентов и оценки. С помощью JavaScript можно выполнять поиск, рассчитывать средний балл и выводить статистику.">Подробнее →</button></article>
+        <article class="work-card" data-category="Оборудование"><div class="work-icon">🖱️</div><p class="work-category">ПЕРИФЕРИЯ</p><h3>Устройства компьютера</h3><p>Назначение клавиатуры, мыши, монитора, принтера, сканера и других периферийных устройств.</p><button class="text-button details-btn" data-title="Устройства компьютера" data-info="Периферийные устройства расширяют возможности ПК: клавиатура и мышь используются для ввода, монитор — для вывода изображения, принтер — для печати.">Подробнее →</button></article>
+      </div>
+      <p class="empty-state" id="emptyState" hidden>По вашему запросу ничего не найдено.</p>
+    </section>
+
+    <section class="section" id="blender">
+      <div class="section-heading"><p class="eyebrow">03 / 3D-МОДЕЛИРОВАНИЕ</p><h2>Мои работы в <span>Blender</span></h2><p>Здесь будут размещены изображения твоих собственных 3D-моделей.</p></div>
+      <div class="project-grid">
+        <article class="project-card"><img class="project-image" src="assets/blender/bottle.png" alt="Модель пластиковой бутылки, созданная в Blender"><div class="project-body"><span class="pill">Blender</span><h3>Пластиковая бутылка для воды</h3><p>Учебная модель пластиковой бутылки. При создании можно использовать Mesh, Extrude, Inset, Bevel и материалы.</p><p class="muted">Модель выполнена в Blender. На скриншоте показаны форма бутылки, синяя крышка и прозрачный пластиковый материал.</p><p class="muted">Инструменты и особенности: Mesh, Extrude, Bevel, материал Plastic и настройка прозрачности.</p></div></article>
+      </div>
+    </section>
+
+    <section class="section" id="figma"><div class="section-heading"><p class="eyebrow">04 / ПРОТОТИПИРОВАНИЕ</p><h2>Проекты в <span>Figma</span></h2><p>Мои учебные проекты интерфейсов и веб-дизайна.</p></div><div class="project-grid">
+<article class="project-card"><div class="placeholder-art">01</div><div class="project-body"><span class="pill">Figma Make</span><h3>Food Delivery — приложение доставки еды</h3><p>Проект интерфейса для заказа еды: просмотр предложений и оформление заказа.</p><a class="text-button" href="https://www.figma.com/make/YGvCP7dwBQ1LJeaiKDVnZe/Food-Delivery-Ordering-App?t=hYKYVuRdSzunrpak-1" target="_blank" rel="noopener noreferrer">Открыть проект в Figma ↗</a></div></article>
+<article class="project-card"><div class="placeholder-art alt">02</div><div class="project-body"><span class="pill">Figma Make</span><h3>PTK Astana College — сайт колледжа</h3><p>Веб-проект для представления колледжа и его информации.</p><a class="text-button" href="https://www.figma.com/make/vGateapTKL1WYJX1v8EpC2/PTK-Astana-College-Website?t=v96a0sLWxyd9qMYS-1" target="_blank" rel="noopener noreferrer">Открыть проект в Figma ↗</a></div></article>
+</div></section>
+
+    <section class="section" id="previous-site"><div class="section-heading"><p class="eyebrow">05 / МОИ САЙТЫ</p><h2>Другие <span>проекты</span></h2><p>Ранее опубликованный учебный сайт.</p></div><div class="project-grid"><article class="project-card"><div class="placeholder-art third">WEB</div><div class="project-body"><span class="pill">GitHub Pages</span><h3>Мой предыдущий сайт</h3><p>Учебный сайт, опубликованный в интернете.</p><a class="text-button" href="https://bekff282-crypto.github.io/student-portfolo/" target="_blank" rel="noopener noreferrer">Открыть сайт ↗</a></div></article></div></section><section class="section" id="uxui">
+      <div class="section-heading"><p class="eyebrow">06 / ДИЗАЙН ИНТЕРФЕЙСА</p><h2>Принципы <span>UX/UI</span></h2></div>
+      <div class="principles">
+        <article><b>01</b><div><h3>Визуальная иерархия</h3><p>Заголовки крупнее основного текста, поэтому посетитель быстро понимает, где находится важная информация.</p></div></article>
+        <article><b>02</b><div><h3>Контрастность</h3><p>Светлый текст на тёмном фиолетовом фоне помогает читать содержимое сайта.</p></div></article>
+        <article><b>03</b><div><h3>Единообразие</h3><p>Карточки, кнопки, отступы и цвета повторяются во всех разделах, создавая единый стиль.</p></div></article>
+        <article><b>04</b><div><h3>Удобная навигация</h3><p>Меню содержит ссылки на основные разделы, а кнопки помогают быстро перейти к работам.</p></div></article>
+        <article><b>05</b><div><h3>Адаптивность</h3><p>Сетка карточек и меню перестраиваются на узком экране, чтобы сайтом было удобно пользоваться на смартфоне.</p></div></article>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="section-heading"><p class="eyebrow">07 / ТЕХНОЛОГИИ</p><h2>HTML, CSS и <span>JavaScript</span></h2><p>Примеры технологий, использованных при создании портфолио.</p></div>
+      <div class="tech-grid">
+        <article class="panel"><h3>HTML — структура</h3><p><code>header</code> — шапка сайта.</p><p><code>nav</code> — навигация.</p><p><code>main</code> — основное содержимое.</p><p><code>section</code> — тематический раздел.</p><p><code>article</code> — самостоятельная карточка.</p><p><code>h1–h3</code> — заголовки.</p><p><code>p</code> — абзац.</p><p><code>a</code> — ссылка.</p><p><code>button</code> — кнопка.</p><p><code>img</code> — изображение.</p><p><code>form</code> — форма.</p><p><code>input</code> — поле ввода.</p></article>
+        <article class="panel"><h3>CSS — оформление</h3><p><code>color</code> — цвет текста.</p><p><code>background</code> — фон.</p><p><code>font-family</code> — шрифт.</p><p><code>font-size</code> — размер текста.</p><p><code>margin</code> — внешние отступы.</p><p><code>padding</code> — внутренние отступы.</p><p><code>display</code> — способ отображения.</p><p><code>grid</code> — сетка карточек.</p><p><code>border-radius</code> — скругление углов.</p><p><code>box-shadow</code> — тень.</p><p><code>max-width</code> — ограничение ширины.</p><p><code>transition</code> — плавный переход.</p></article>
+        <article class="panel"><h3>JavaScript — интерактивность</h3><p>Переключение светлой и тёмной темы.</p><p>Поиск работ по названию.</p><p>Фильтрация карточек по категориям.</p><p>Модальное окно с подробностями.</p><p>Проверка формы и сообщение об отправке.</p></article>
+      </div>
+    </section>
+</main>
+
+  <footer>
+    <div><a class="logo" href="#home">BB<span>.</span></a><p>Бекзат Баймурзинов · WD-2-135</p></div>
+    <p>Учебный проект · 2026</p><a href="#home">Наверх ↑</a>
+  </footer>
+
+  <dialog id="detailsDialog"><button class="dialog-close" id="dialogClose" aria-label="Закрыть">×</button><p class="eyebrow">УЧЕБНАЯ РАБОТА</p><h2 id="dialogTitle"></h2><p id="dialogInfo"></p></dialog>
+  <script src="script.js"></script>
+</body>
+</html>
